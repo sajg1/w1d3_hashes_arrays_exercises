@@ -56,7 +56,7 @@ users = {
 # p jonathan_twitter_handle = users["Jonathan"][:twitter]
 # p erik_hometown = users["Erik"][:hometown]
 # erik_lottery_numbers = users["Erik"][:lottery_numbers]
-# # p avril_pet_type = users["Avril"][:pets][:species]
+# p avril_pet_type = users["Avril"][:pets][:species]
 # p erik_lottery_numbers.min
 # avrils_lottery_numbers = users["Avril"][:lottery_numbers]
 #
@@ -71,11 +71,15 @@ users = {
 # erik_lottery_numbers[5] = 7
 # p erik_lottery_numbers
 
-erik_hometown = users["Erik"][:hometown]
-erik_hometown = "Edinburgh"
-p erik_hometown
+# erik_hometown = users["Erik"][:hometown]
+# erik_hometown = "Edinburgh"
+# p erik_hometown
+# erik_pet_names = users["Erik"][:pets][:name => "nemo"
+users["Erik"][:pets] = {}
+users["Erik"][:pets].merge([ name: "Fluffy"])
+p users["Erik"][:pets][:name]
 
-# users["Erik"][:pets][:name] = "Fluffy"
+
 
 
 #QUESTIONS
@@ -88,5 +92,6 @@ p erik_hometown
 # 6. Return an array of Avril's lottery numbers that are even
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 # 8. Change Erik's hometown to Edinburgh
+
 # 9. Add a pet dog to Erik called "Fluffy"
 # 10. Add another person to the users hash
