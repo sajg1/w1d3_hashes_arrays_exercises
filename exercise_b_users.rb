@@ -45,19 +45,26 @@ users = {
     :twitter => "bridgpally",
     :lottery_numbers => [12, 14, 33, 38, 9, 25],
     :home_town => "Dunbar",
-    :pets =>
+    :pets => [
       {
         :name => "monty",
         :species => "snake"
       }
+    ]
   }
 }
 
 # p jonathan_twitter_handle = users["Jonathan"][:twitter]
+
 # p erik_hometown = users["Erik"][:hometown]
+
 # erik_lottery_numbers = users["Erik"][:lottery_numbers]
-# p avril_pet_type = users["Avril"][:pets][:species]
+# avril_pets = users["Avril"][:pets][0]
+# p avril_snake = avril_pets[:species]
+
+
 # p erik_lottery_numbers.min
+
 # avrils_lottery_numbers = users["Avril"][:lottery_numbers]
 #
 #   for number in avrils_lottery_numbers
@@ -74,10 +81,15 @@ users = {
 # erik_hometown = users["Erik"][:hometown]
 # erik_hometown = "Edinburgh"
 # p erik_hometown
-# erik_pet_names = users["Erik"][:pets][:name => "nemo"
-users["Erik"][:pets] = {}
-users["Erik"][:pets].merge([ name: "Fluffy"])
-p users["Erik"][:pets][:name]
+
+erik_new_pet = users["Erik"][:pets][4]
+
+erik_new_pet_name = [:name =>"Fluffy"]
+users["Erik"][:pets][4] = erik_new_pet_name
+
+p users["Erik"][:pets][4]
+
+
 
 
 
