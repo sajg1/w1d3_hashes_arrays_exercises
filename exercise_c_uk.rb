@@ -16,15 +16,25 @@ united_kingdom = [
   }
 ]
 
-wales = united_kingdom[1]
-wales_capital = wales[:capital]
-wales_capital = "Cardiff"
-p wales_capital
+# wales = united_kingdom[1]
+# wales_capital = wales[:capital]
+# wales_capital = "Cardiff"
+# p wales_capital
+#
+# northern_ireland = [:name => "Northern Ireland", :population => 1811000, :capital => "Belfast"]
+# united_kingdom[3] = northern_ireland
+#
+# p united_kingdom
 
-northern_ireland = [:name => "Northern Ireland", :population => 1811000, :capital => "Belfast"]
-united_kingdom[3] = northern_ireland
+for [1..-1]
+  p {:name}
+end
 
-p united_kingdom
+
+total_population = 0
+for :population in united_kingdom
+  total_population += :population
+end
 
 # 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
 # 2. Create a Hash for Northern Ireland and add it to the `united_kingdom` array (The capital is Belfast, and the population is 1,811,000).

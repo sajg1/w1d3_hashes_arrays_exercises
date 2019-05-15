@@ -82,16 +82,27 @@ users = {
 # erik_hometown = "Edinburgh"
 # p erik_hometown
 
-erik_new_pet = users["Erik"][:pets][4]
+# erik_new_pet = users["Erik"][:pets][4]
+#
+# erik_new_pet_name = [:name =>"Fluffy"]
+# users["Erik"][:pets][4] = erik_new_pet_name
+#
+# p users["Erik"][:pets][4]
 
-erik_new_pet_name = [:name =>"Fluffy"]
-users["Erik"][:pets][4] = erik_new_pet_name
+#can I put this new variable in as a new hash?
+new_person = {
+  "Greg" => {
+    :twitter => "greggyboy",
+    :hometown => "buckie",
+    :pets => {
+      :name => "yoda",
+      :species => "turtle"
+    }
+  }
+}
 
-p users["Erik"][:pets][4]
-
-
-
-
+users = new_person.merge
+p users
 
 
 #QUESTIONS
