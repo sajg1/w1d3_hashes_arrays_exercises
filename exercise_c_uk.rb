@@ -16,18 +16,20 @@ united_kingdom = [
   }
 ]
 
-# wales = united_kingdom[1]
-# wales_capital = wales[:capital]
-# wales_capital = "Cardiff"
-# p wales_capital
-#
-# northern_ireland = [:name => "Northern Ireland", :population => 1811000, :capital => "Belfast"]
-# united_kingdom[3] = northern_ireland
-#
-# p united_kingdom
+wales = united_kingdom[1]
+wales_capital = wales[:capital]
+wales_capital = "Cardiff"
+p wales_capital
 
-for [1..-1]
-  p {:name}
+northern_ireland = [:name => "Northern Ireland", :population => 1811000, :capital => "Belfast"]
+united_kingdom[3] = northern_ireland
+
+p united_kingdom
+
+
+for [0..2]
+  names = united_kingdom[:names]
+  return names
 end
 
 

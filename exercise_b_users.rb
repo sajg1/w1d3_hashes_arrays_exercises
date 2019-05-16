@@ -54,42 +54,44 @@ users = {
   }
 }
 
-# p jonathan_twitter_handle = users["Jonathan"][:twitter]
+p jonathan_twitter_handle = users["Jonathan"][:twitter]
 
-# p erik_hometown = users["Erik"][:hometown]
+p erik_hometown = users["Erik"][:hometown]
 
-# erik_lottery_numbers = users["Erik"][:lottery_numbers]
-# avril_pets = users["Avril"][:pets][0]
-# p avril_snake = avril_pets[:species]
+erik_lottery_numbers = users["Erik"][:lottery_numbers]
+avril_pets = users["Avril"][:pets][0]
+p avril_snake = avril_pets[:species]
 
 
-# p erik_lottery_numbers.min
+p erik_lottery_numbers.min
 
-# avrils_lottery_numbers = users["Avril"][:lottery_numbers]
-#
-#   for number in avrils_lottery_numbers
-#     if number % 2 == 0
-#       p number
-#     end
-#   end
-#
-#   p avrils_lottery_numbers
+avrils_lottery_numbers = users["Avril"][:lottery_numbers]
 
-# erik_lottery_numbers[5] = 7
-# p erik_lottery_numbers
+  for number in avrils_lottery_numbers
+    if number % 2 == 0
+      p number
+    end
+  end
+  #could also use the method .even? in the if statement
 
-# erik_hometown = users["Erik"][:hometown]
-# erik_hometown = "Edinburgh"
-# p erik_hometown
+  p avrils_lottery_numbers
 
-# erik_new_pet = users["Erik"][:pets][4]
-#
-# erik_new_pet_name = [:name =>"Fluffy"]
-# users["Erik"][:pets][4] = erik_new_pet_name
-#
-# p users["Erik"][:pets][4]
+erik_lottery_numbers[5] = 7
+p erik_lottery_numbers
 
-#can I put this new variable in as a new hash?
+erik_hometown = users["Erik"][:hometown]
+erik_hometown = "Edinburgh"
+p erik_hometown
+
+erik_new_pet = users["Erik"][:pets][4]
+
+erik_new_pet_name = [:name =>"Fluffy"]
+users["Erik"][:pets][4] = erik_new_pet_name
+
+p users["Erik"][:pets][4]
+# could use a .push
+
+# can I put this new variable in as a new hash?
 new_person = {
   "Greg" => {
     :twitter => "greggyboy",
@@ -101,7 +103,6 @@ new_person = {
   }
 }
 
-users = new_person.merge
 p users
 
 
@@ -117,4 +118,4 @@ p users
 # 8. Change Erik's hometown to Edinburgh
 
 # 9. Add a pet dog to Erik called "Fluffy"
-# 10. Add another person to the users hash
+### 10. Add another person to the users hash

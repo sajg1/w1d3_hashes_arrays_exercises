@@ -1,17 +1,23 @@
 stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Haymarket" ]
 
-# stops.push["Edinburgh Waverley"]
-# stops.unshift["Glasgow Queens St"]
-# stops.insert(4, "Polmont")
-# p stops.index("Linlithgow")
-# stops.delete("Livingston")
-# stops.delete_at(2)
-# p stops.count
-#how many ways to print falkirk
-# p stops[2]
+stops.push["Edinburgh Waverley"]
+stops.unshift["Glasgow Queens St"]
+stops.insert(4, "Polmont")
+p stops.index("Linlithgow")
+stops.delete("Livingston")
+stops.delete_at(2)
+p stops.count
+# how many ways to print falkirk high
+p stops[2]
+p stops[-5]
+p stops.at(2)
+p stops.at(-5)
 
+stops.fetch(2)
+stops.dig(2)
+# a for loop with an if statement
 
-# p stops.reverse()
+p stops.reverse()
 
 def all_items(array)
   for item in array
